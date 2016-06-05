@@ -1,0 +1,48 @@
+body {
+    background-color:lightgray;
+    font-size:16px;
+}
+
+.topbar {
+    background-color: brown;
+}
+
+.topbar span {
+    color: orange;
+}
+
+.list-group-item {
+    max-width: 400px;
+}
+
+.badge {
+    background-color: brown;
+    color: orange;
+}
+
+#divCommentaire, #divResultat {
+    margin-top: 20px;
+}
+
+.int-input {
+    width:17%;
+    max-width: 50px;
+}
+
+input {
+    border-radius: 5px !important;
+    text-align: right;
+    padding-right:10px;
+}
+
+.panel-heading {
+    background-color: #926239 !important;
+}
+
+.panel-danger {
+    background-color: #C3834C;
+}
+
+.panel-title {
+    color: white;
+}

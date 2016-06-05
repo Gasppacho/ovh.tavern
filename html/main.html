@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jQuery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
+
+    <title>Tavern</title>
+
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                <h3><span>TAVERN</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <button style="width:100%" class="btn btn-warning" onclick="nextMonth()">Prochain mois</button>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Commentaire du mois</h1>
+            </div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas natus quaerat, porro, fuga facilis perspiciatis ab non, quae iure eius corrupti. Qui expedita eius, iste neque quaerat dolore optio sapiente?
+            </div>
+        </div>
+            
+        <div class="row center-block">
+            <div id="divResultat" class="panel panel-danger col-md-6">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Résultat du mois</h1>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Quantité produite :
+                            <span class="badge">9999</span>
+                        </li>
+                        <li class="list-group-item">
+                            Quantité vendue :
+                            <span class="badge">9999</span>
+                        </li>
+                        <li class="list-group-item">
+                            Recette :
+                            <span class="badge">9999</span>
+                        </li>
+                        <li class="list-group-item">
+                            Dépenses :
+                            <span class="badge">9999</span>
+                        </li>
+                        <li class="list-group-item">
+                            Marge :
+                            <span class="badge">9999</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Nains</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th>Metier</th>
+                    <th>Nombre</th>
+                    <th>Salaire</th>
+                </tr>
+                <tr id="trServeur">
+                    <td>Serveur</td>
+                    <td><input id="nbServeur" type="number" min="0" /></th>
+                    <td>
+                        <span><input class="po" type="number" min="0" max="99" /></span><span class="label label-default">PO</span>
+                        <span><input class="pa" type="number" min="0" max="99" /></span><span class="label label-default">PA</span>
+                        <span><input class="pc" type="number" min="0" max="99" /></span><span class="label label-default">PC</span>
+                    </td>
+                </tr>
+                <tr id="trGarde">
+                    <td>Gardes</td>
+                    <td><input id="nbGarde" type="number" min="0" /></th>
+                    <td>
+                        <span><input class="po" type="number" min="0" max="99" /></span><span class="label label-default">PO</span>
+                        <span><input class="pa" type="number" min="0" max="99" /></span><span class="label label-default">PA</span>
+                        <span><input class="pc" type="number" min="0" max="99" /></span><span class="label label-default">PC</span>
+                    </td>
+                </tr>
+                <tr id="trPlongeur">
+                    <td>Plongeur</td>
+                    <td><input id="nbPlongeur" type="number" min="0" /></th>
+                    <td>
+                        <span><input class="po" type="number" min="0" max="99" /></span><span class="label label-default">PO</span>
+                        <span><input class="pa" type="number" min="0" max="99" /></span><span class="label label-default">PA</span>
+                        <span><input class="pc" type="number" min="0" max="99" /></span><span class="label label-default">PC</span>
+                    </td>
+                </tr>
+                <tr id="trIngenieur">
+                    <td>Ingénieur</td>
+                    <td><input id="nbIngenieur" type="number" min="0" /></th>
+                    <td>
+                        <span><input class="po" type="number" min="0" max="99" /></span><span class="label label-default">PO</span>
+                        <span><input class="pa" type="number" min="0" max="99" /></span><span class="label label-default">PA</span>
+                        <span><input class="pc" type="number" min="0" max="99" /></span><span class="label label-default">PC</span>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Bières</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th>Bières</th>
+                    <th>Qualité</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <td>Bière 1</td>
+                    <td>1</td>
+                    <td>
+                        <span><input class="po" type="number" min="0" max="99" /></span><span class="label label-default">PO</span>
+                        <span><input class="pa" type="number" min="0" max="99" /></span><span class="label label-default">PA</span>
+                        <span><input class="pc" type="number" min="0" max="99" /></span><span class="label label-default">PC</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Stock</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th>Items</th>
+                    <th>Quantité</th>
+                    <th>Qualité</th>
+                </tr>
+                <tr>
+                    <td>Houblon</td>
+                    <td>1000</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Production</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th>Items</th>
+                    <th>Capacité de production</th>
+                    <th>Qualité</th>
+                </tr>
+                <tr>
+                    <td>Bière 1</td>
+                    <td>500</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Fournisseurs</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th>Nom</th>
+                    <th>Item</th>
+                    <th>Quantité</th>
+                    <th>Qualité</th>
+                    <th>Prix/Unité</th>
+                    <th>Demande</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Ferme du vieux Roux</td>
+                    <td>Houblon</td>
+                    <td>10000</td>
+                    <td>1</td>
+                    <td>
+                        <div>
+                            <span>00</span><span class="label label-default">PO</span>
+                            <span>02</span><span class="label label-default">PA</span>
+                            <span>00</span><span class="label label-default">PC</span>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title">Machines</h1>
+            </div>
+            <div class="panel-body">
+                Machines
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+</body>
+
+</html>
